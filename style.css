@@ -1,35 +1,83 @@
-* {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
+  background-color: #f9f9f9;
+  background: url(./assets/purple.jpg);
 }
 
-body {
-  background: #1f0171;
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.1);
 }
 
-.app {
-  background: #fff;
-  width: 90%;
-  max-width: 600px;
-  margin: 100px auto 0;
-  border-radius: 10px;
-  padding: 30px;
+#question-container {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-/* .btn:hover {
-  background: red;
-}
-
-.btn {
-  cursor: pointer;
+#question {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
 }
 
 #answer-buttons {
   display: flex;
-  padding: 10px;
-  gap: 10px;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
 
-} */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  width: fit-content;
+}
+
+.btn {
+  padding: 1.5rem;
+  background-color: #70b5ff;
+  color: white;
+  border: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+input,
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3282d8;
+}
+
+.hide {
+  display: none;
+}
+
+#result {
+  margin: 2rem auto;
+}
+
+#question,
+#result {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

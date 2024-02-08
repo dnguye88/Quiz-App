@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Quiz App</title>
   </head>
   <body>
-    <div class="app">
-      <h1>League of Legends Edition</h1>
-      <div class="quiz">
-        <h2 id="question">Question goes here</h2>
+    <div class="quiz-container">
+      <div id="question-container">
+        <h3 id="question">Question</h3>
         <div id="answer-buttons">
           <button class="btn">Answer 1</button>
           <button class="btn">Answer 2</button>
@@ -18,6 +18,9 @@
           <button class="btn">Answer 4</button>
         </div>
       </div>
+      <button id="next-btn" class="btn hide">Next</button>
+      <div id="result" class="hide"></div>
+      <button id="restart-btn" class="btn hide">Restart</button>
     </div>
   </body>
 </html>
